@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: #f4f6f9;
+  color: #1f2937;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #111827, #1f2937);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+header p {
+  color: #9ca3af;
+  margin-top: 5px;
+}
+
+/* NAVBAR */
+nav {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  margin: 15px 25px;
+  text-decoration: none;
+  color: #374151;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+
+/* SECTION BOX */
+.section-box {
+  margin-top: 40px;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.light-bg {
+  background: #f9fafb;
+}
+
+/* HEADINGS */
+h2 {
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+/* GRID */
+.subsection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* SUB CARDS */
+.sub-card {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  transition: 0.3s;
+}
+
+.sub-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+}
+
+/* COLOR VARIANTS */
+.blue {
+  border-left: 5px solid #2563eb;
+  background: #eff6ff;
+}
+
+.green {
+  border-left: 5px solid #16a34a;
+  background: #f0fdf4;
+}
+
+.purple {
+  border-left: 5px solid #7c3aed;
+  background: #f5f3ff;
+}
+
+.orange {
+  border-left: 5px solid #ea580c;
+  background: #fff7ed;
+}
+
+/* MATCH HEADING COLORS */
+.blue h3 { color: #1d4ed8; }
+.green h3 { color: #15803d; }
+.purple h3 { color: #6d28d9; }
+.orange h3 { color: #c2410c; }
+
+/* STATUS */
+.status {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.success {
+  color: #16a34a;
+}
+
+/* ARCHITECTURE FLOW */
+.architecture-flow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.flow-box {
+  background: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  margin: 5px;
+}
+
+.flow-arrow {
+  margin: 5px;
+  font-weight: bold;
+  color: #6b7280;
+}
+
+/* TEXT */
+.architecture-text {
+  text-align: center;
+  color: #4b5563;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 40px;
+  background: #111827;
+  color: #9ca3af;
+  text-align: center;
+  padding: 20px 0;
+}

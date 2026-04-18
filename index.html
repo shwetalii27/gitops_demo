@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GitOps Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <h1>GitOps Deployment System</h1>
+    <p>Automated Continuous Delivery Pipeline</p>
+  </div>
+</header>
+
+<nav>
+  <div class="container nav-inner">
+    <a href="#overview">Overview</a>
+    <a href="#architecture">Architecture</a>
+    <a href="#capabilities">Capabilities</a>
+  </div>
+</nav>
+
+<!-- OVERVIEW -->
+<section id="overview" class="container section-box">
+  <h2>Overview</h2>
+
+  <div class="subsection-grid">
+    
+    <div class="sub-card blue highlight">
+      <h3>Deployment Status</h3>
+      <p class="status success">Active</p>
+      <span id="timestamp"></span>
+    </div>
+
+    <div class="sub-card green">
+      <h3>Pipeline</h3>
+      <p>Automated workflow triggered on every commit.</p>
+    </div>
+
+    <div class="sub-card purple">
+      <h3>Version Control</h3>
+      <p>All deployments managed via Git history.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ARCHITECTURE -->
+<section id="architecture" class="container section-box light-bg">
+  <h2>Architecture</h2>
+
+  <div class="architecture-flow">
+    <div class="flow-box">Code Update</div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-box">GitHub</div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-box">GitHub Actions</div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-box">Live Deployment</div>
+  </div>
+
+  <p class="architecture-text">
+    This system follows a GitOps model where GitHub acts as the single source of truth.
+    Any change in the repository automatically triggers deployment via a CI/CD pipeline.
+  </p>
+</section>
+
+<!-- CAPABILITIES -->
+<section id="capabilities" class="container section-box">
+  <h2>Capabilities</h2>
+
+  <div class="subsection-grid">
+
+    <div class="sub-card blue">
+      <h3>DevOps Integration</h3>
+      <p>Seamless development-to-deployment automation.</p>
+    </div>
+
+    <div class="sub-card green">
+      <h3>Continuous Delivery</h3>
+      <p>Immediate deployment after each code push.</p>
+    </div>
+
+    <div class="sub-card purple">
+      <h3>GitOps Control</h3>
+      <p>System state fully controlled via repository.</p>
+    </div>
+
+    <div class="sub-card orange">
+      <h3>Rollback Support</h3>
+      <p>Revert to stable versions using commit history.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>Cloud Computing Mini Project</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
