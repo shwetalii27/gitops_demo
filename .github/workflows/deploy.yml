@@ -3,7 +3,10 @@ name: Deploy Static Website
 on:
   push:
     branches:
-      - main   # change to master if needed
+      - main
+
+permissions:
+  contents: write   # 🔥 THIS FIXES MOST ERRORS
 
 jobs:
   deploy:
