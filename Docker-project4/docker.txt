@@ -1,0 +1,13 @@
+﻿1.        sudo apt install docker.io
+2.         docker -v
+3.         sudo docker images
+4.         sudo docker ps
+5.         sudo docker pull python:3.11.15-trixie
+6.         sudo docker ps
+7.         sudo docker images
+8.         sudo docker run -d -it --name py python:3.11.15-trixie
+9.         sudo docker ps -a
+10.        sudo docker exec -it py python3
+11.        sudo docker stop 0035b3e54285
+12.         sudo docker container rm 0035b3e54285
+13.        sudo docker image rmi python:3.11.15-trixie
