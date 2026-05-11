@@ -1,29 +1,20 @@
-document.getElementById("userForm").addEventListener("submit", function (e) {
-    e.preventDefault();
+document.getElementById("regform").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission  
 
-    let user = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        password: document.getElementById("password").value,
+    let username = document.getElementById("username").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+    let address = document.getElementById("address").value;
+
+    let userdata={
+        username: username,
+        email: email,
+        password: password,
+        address: address
     };
 
-    // Save to LocalStorage
-    let users = JSON.parse(localStorage.getItem("users")) || [];
-    users.push(user);
+    let users=JSON.parse(localStorage.getItem("users")) || [];
+    users.push(userdata);
     localStorage.setItem("users", JSON.stringify(users));
-
-    // AJAX POST
-    fetch("http://localhost:3000/register", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify(user),
-    })
-        .then((res) => res.json())
-        .then((data) => {
-            alert(data.message);
-            document.getElementById("userForm").reset();
-        })
-        .catch((err) => console.log(err));
+    window.location.href = "list.html"; // Redirect to list page
 });
